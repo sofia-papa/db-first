@@ -1,0 +1,17 @@
+TABELLA AUTO USATE
+
+modello - stringa - VARCHAR (10)
+look - stringa - VARCHAR (6)
+porte - intero - SMALLINT
+posti - intero - SMALLINT
+serbatoio - 
+bagagliaio - intero
+alimentazione - stringa - VARCHAR (6)
+cambio - stringa - VARCHAR (8)
+cilindrata:
+velocità massima:
+accellerazione:
+prezzo - numero decimale - DOUBLE(6,4)
+valuta - stringa -  VARCHAR (3)
+disponibile - boolean - TINYINT
+
