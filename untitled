@@ -1,17 +1,33 @@
-TABELLA AUTO USATE
+TABELLA AUTO USATA
 
-modello - stringa - VARCHAR (10)
-look - stringa - VARCHAR (6)
-porte - intero - SMALLINT
-posti - intero - SMALLINT
-serbatoio - 
-bagagliaio - intero
-alimentazione - stringa - VARCHAR (6)
-cambio - stringa - VARCHAR (8)
-cilindrata:
-velocità massima:
-accellerazione:
-prezzo - numero decimale - DOUBLE(6,4)
+id - intero - MEDIUMINT - PRIMARY_KEY - AUTOINCREMENT 
+numero telaio - stringa - VARCHAR (18)
+brand - stringa - VARCHAR (30) - NOT NULL 
+modello - stringa - VARCHAR (30) - NOT NULL
+garanzia - strings - VARCHAR (100) - NOT NULL
+descrizione - stringa - TEXT - 
+chilometraggio - intero - MEDIUMINT
+colore - stringa - VARCHAR (255) - NULL
+immagine - stringa - VARCHAR (255) - NULL
+anno - date - YEAR - NOT NULL
+look - stringa - VARCHAR (6) 
+porte - intero - TINYINT - NULL
+posti - intero - TINYINT - NULL
+weight - intero - SMALLINT - NULL
+stato - stringa - VARCHAR (10) - NULL
+accessori - stringa - TEXT - NULL
+serbatoio - stringa - VARCHAR (5) - NOT NULL
+bagagliaio - intero - SMALLINT
+alimentazione - stringa - VARCHAR (15) - NOT NULL
+cambio - stringa - VARCHAR (15) - NOT NULL
+cilindrata - intero - SMALLINT - NOT NULL
+emissioni - stringa - VARCHAR (3) - NOT NULL
+co2 - numero decimale - FLOAT(2,1) - NOT NULL
+velocità massima - stringa - VARCHAR (10)
+accellerazione - nuemro decimale - FLOAT (3,3)
+prezzo - numero decimale - FLOAT(8,2) - NOTNULL 
 valuta - stringa -  VARCHAR (3)
-disponibile - boolean - TINYINT
+disponibile - boolean - TINYINT - NOT NULL
+valutazione - intero - TINYINT
+acquirenti interessati - intero - SMALLINT - NULL - DEFAULT 0
 
